@@ -7,3 +7,4 @@
 | Number              | Layer        | Title                             | Owner                                                            | Type | Status |
 | ------------------- | ------------ | --------------------------------- | ---------------------------------------------------------------- | ---- | ------ |
 | [39](./bip-0039.md) | 애플리케이션 | 결정적 키 생성을 위한 니모닉 코드 | Marek Palatinus,<br>Pavol Rusnak,<br>Aaron Voisine,<br>Sean Bowe | 표준 | 제안됨 |
+| [43](./bip-0043.md) | 애플리케이션 | 결정적 지갑을 위한 목적 필드 | Marek Palatinus,<br>Pavol Rusnak | 정보 | 완결됨 |
