@@ -60,7 +60,8 @@
       | 카테고리 | 문서 포맷 |
       |---|---|
       | 마스터링 비트코인 | [mastering-bitcoin.md](./format/mastering-bitcoin.md) |
-      | bip | [bip.md](./format/bip.md)
+      | bip | [bip.md](./format/bip.md) |
+      | 기타 | [etc.md](./format/etc.md)
 
 
 3.  로컬 레파지토리에 반영 후 원본 레파지토리에 **Pull Request**를 보내주세요.
