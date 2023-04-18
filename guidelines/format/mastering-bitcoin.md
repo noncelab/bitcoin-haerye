@@ -7,10 +7,12 @@
 
 > 📖 원문: [원문 출처와 링크](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch05.asciidoc) 큰 제목 바로 아래 원문 출처를 표기합니다. 
 
-목차
+### 목차
 - [제목](#제목)
   - [주요 내용 1](#주요-내용-1)
   - [주요 내용 2](#주요-내용-2)
+
+---
 
 ## 제목
 
