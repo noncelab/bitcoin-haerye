@@ -7,6 +7,13 @@
 
 > 📖 원문: [Mastering the Lightning Network 1st Endition - Chapter 07. Payment Channels](https://github.com/lnbook/lnbook/blob/develop/07_payment_channels.asciidoc) 큰 제목 바로 아래 원문 출처를 표기합니다. 
 
+### 목차
+- [제목](#제목)
+  - [주요 내용 1](#주요-내용-1)
+  - [주요 내용 2](#주요-내용-2)
+
+---
+
 ## 제목
 
 - 개조식으로 작성해 주세요.
@@ -21,7 +28,7 @@
 원문 형식을 유지하며 작성합니다.
 
   <figure>
-    <img src="https://github.com/lnbook/lnbook/raw/develop/images/mtln_0701.png" width="500">
+    <img src="https://github.com/lnbook/lnbook/raw/develop/images/mtln_0701.png" width="700">
     <br>
       그림 1. 그림의 캡션을 넣어주세요.
   </figure>
