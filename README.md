@@ -20,6 +20,7 @@
 - [마스터링 비트코인](./mastering%20bitcoin/index.md): 개미책 번역 및 해설서
 - [배경 지식](./background/index.md): 비트코인을 이해하기 위해 알아야할 기초 지식
 - [BIP](./bip/index.md): 비트코인 개선안
+- [마스터링 라이트닝 네트워크](./lnbook/index.md): 마스터링 라이트닝 네트워크 번역 및 해설서
 
 <br>
 
@@ -35,3 +36,4 @@
 ## 라이센스
 
 - 마스터링 비트코인: [원문 LICENSE](https://github.com/bitcoinbook/bitcoinbook/blob/develop/LICENSE)
+- 마스터링 라이트닝 네트워크: [원문 LICENSE](https://github.com/lnbook/lnbook/blob/develop/LICENSE.md)
