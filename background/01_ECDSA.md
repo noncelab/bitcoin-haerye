@@ -7,8 +7,6 @@
   - [타원곡선 위의 점 덧셈(Point Addition)4](#타원곡선-위의-점-덧셈point-addition4)
   - [secp256k1와 키 쌍](#secp256k1와-키-쌍)
   - [서명 생성과 서명 검증](#서명-생성과-서명-검증)
-    - [서명 생성](#서명-생성)
-    - [서명 검증](#서명-검증)
   - [참고 자료](#참고-자료)
   - [추천 자료](#추천-자료)
 
@@ -38,7 +36,7 @@ $$
 
 위 방정식이 바로 타원곡선 방정식입니다. 계수 a와 b에 따라 아래 이미지에서 볼 수 있듯이 다양한 타원곡선 그래프가 그려집니다.
 
-![다양한 타원 곡선](https://upload.wikimedia.org/wikipedia/commons/d/db/EllipticCurveCatalog.svg)
+![다양한 타원 곡선](https://upload.wikimedia.org/wikipedia/commons/d/db/EllipticCurveCatalog.svg)
 
 <br>
 
@@ -52,9 +50,11 @@ $$
 비트코인은 **유한체 위에서 정의된 secp256k1**을 사용합니다. 이해를 돕기 위해 여러분이 중학교 때 배운 실수체 위에서 정의된 타원곡선과 비교해보겠습니다. 
 <br>
 <figure>
-<img src="./01_ECDSA/secp256k1-graph-realnum.png" alt="실수체 위에서 정의된 타원곡선 그래프" style="width:100%">
+<img src="./01_ECDSA/secp256k1-graph-realnum.png" alt="실수체 위에서 정의된 타원곡선 그래프" style="width:60%">
 <figcaption align="center">출처: https://en.bitcoin.it/wiki/Secp256k1</figcaption>
 </figure>
+
+<br>
 
 ![유한체 위에서 정의된 타원곡선](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0403.png)
 
@@ -66,7 +66,7 @@ $$
 유한체란 유한개의 원소를 가지는 체이며 위수(order) 17을 가지는 유한체를 아래와 같이 표현할 수 있습니다.
 
 $$
-F_{17} = \{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16\}
+F_{17} = \lBrace0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16\rBrace
 $$
 
 유한체는 항상 양수이고 소수인 위수(order)를 갖습니다. 그리고 사칙연산의 결과가 모두 유한체에 속하는 값이어야 합니다. 하지만 우리가 제일 먼저 배우는 사칙연산인 덧셈 하나만 해봐도 그 결과값이 위 유한체에 속하지 않는 다는 것을 알 수 있습니다. 
@@ -78,7 +78,7 @@ $$
 따라서 이 조건을 만족하기 위해 유한체에서는 나머지 연산(modulo)를 활용합니다.
 
 $$
-14 +_f15=(14+15)\%17=12
+14 +_f15=(14+15) \% 17=12
 $$
 
 나머지 연산임을 표시하기 위해 $+_f$ 로 표시했습니다. 29를 유한체의 위수인 17로 나눈 나머지인 12는 $F_{17}$에 속하며 ECDSA에서 모든 연산은 이와 같은 나머지 연산으로 이루어집니다. 이 계산법을 따르면 좌표 (5, 8)이 어떻게 유한체 $F_{17}$위에서 정의된 secp256k1 위의 한 점인지 이해가 됩니다.
@@ -90,7 +90,7 @@ $$
 위 타원 곡선 방정식의 좌변에 y좌푯값인 8을 대입해봅니다.
 
 $$
-8^2\%17=13
+8^2 \% 17=13
 $$
 
 유한체에서 나머지 연산(modulo)를 사용한다고 언급했던 것을 잊지 않으셨죠? 8의 제곱인 64를 유한체의 위수인 17로 나눈 나머지 값은 13입니다.
@@ -98,7 +98,7 @@ $$
 이제 우변에 x좌푯값인 5를 대입해봅니다.
 
 $$
-(5^3+7)\%17=13
+(5^3+7) \% 17=13
 $$
 
 5를 3제곱 한 값 125에 7을 더한 132를 유한체의 위수인 17로 나눈 나머지 값 역시 13입니다. 따라서 좌표 (5, 8)은 유한체 $F_{17}$위에서 정의된 secp256k1 위의 한 점입니다.
@@ -172,7 +172,7 @@ p는 유한체의 위수(order), a와 b는 타원곡선 방정식의 1차 0차 �
 여기서 n으로 표현된 군의 위수가 낯선 개념일 겁니다. 소수를 위수로 가지는 유한체 위에 정의된 타원 곡선의 특별한 특징 중 하나인데, 타원 곡선의 한 점 G에서 계속 점 덧셈을 수행하다 보면 G+O=G를 만족하는 무한원점(the point at infinity)에 도달하게 됩니다. 무한원점은 덧셈에 대한 항등원이며 무한원점에 도달할 때까지 얻은 결과값을 다음 집합으로 표현할 수 있습니다. 
 
 $$
-\{G, 2G, 3G, 4G, ... nG\}
+\lBrace G, 2G, 3G, 4G, ... nG \rBrace
 $$
 
 여기서 nG=O이며,
@@ -201,7 +201,7 @@ $$
 
 이제 마지막으로 비트코인의 서명 생성과 서명 검증 과정을 살펴보겠습니다. 
 
-![https://www.oreilly.com/api/v2/epubs/9781491902639/files/images/msbt_0501.png](https://www.oreilly.com/api/v2/epubs/9781491902639/files/images/msbt_0501.png)
+![UTXO 해체 스크립트 scheme](https://www.oreilly.com/api/v2/epubs/9781491902639/files/images/msbt_0501.png)
 
 
 A지갑에서 B지갑으로 비트코인을 전송한다고 해봅시다. A는 자신이 사용하려고 하는 UTXO의 주인이 맞다는 것을 증명해야 합니다. 위 그림처럼 <sig> <PubK>(생성한 서명 sig와 공개키)로 해제 스크립트(unlocking script)를 만들어서 UTXO의 잠금 스크립트(locking script)를 해제해야 증명할 수 있습니다. 바로 이 과정에서 ECDSA의 서명 생성과 서명 검증 이론이 사용됩니다. 
@@ -226,21 +226,16 @@ A의 개인키는 $k$, 공개키는 $P$라고 합시다.
 3. A가 B에게 얼마의 비트코인을 전송하겠다는 내용이 담긴 거래 메시지(Version, Inputs, Outputs, Locktime, Fee, Signature)를 SHA1 해시한 결과를 $z$(20 bytes)라고 합니다.
 4. 이제 A는 다음 방정식을 풀어서 $s$값을 얻어야 합니다. 이 방정식은 Secp256k1 타원 곡선 위의 두 점 $zG$, $rP$의 점 덧셈 결과인 $sR$에 대해서 $R$값을 알고 있을 때 $s$값이 무엇이 되는지를 찾아내는 방정식입니다. 
    
-   $$
-   zG+rP=sR
-   $$
+  
+  $zG+rP=sR$
 
    비밀키(k)를 소유했고 랜덤값 $l$을 알고 있는 A는 이 방정식을 쉽게 풀어서 $s$값을 얻을 수 있습니다. 왜냐하면 $P=kG$, $R=lG$이므로 아래 식으로 치환이 가능하기 때문입니다.
 
-   $$
-   zG+r(kG)=s(lG)
-   $$
+   $zG+r(kG)=s(lG)$
    
    공통인수인 $G$를 소거하고 우변의 $l$을 좌변으로 옮기면, 아래와 같이 s값을 구할 수 있습니다.
    
-   $$
-   \frac{(z+rk)}{l}=s
-   $$
+   $\frac{(z+rk)}{l}=s$
 
 5. 서명 검증에 사용될 $(r, s)$, 서명해시 $z$, 1번에서 생성한 공개키 $R$을 비트코인 네트워크에 브로드캐스팅 합니다.
 
@@ -272,13 +267,17 @@ $$
 이해를 돕기 위해 다음 과정<sup>[7](#footnote_7)</sup>을 천천히 따라와보시길 바랍니다.
 
 위 식에서 P는 A의 공개키이기 때문에 kG로 치환됩니다.
-  $$
-  P' = z・G/s + r・kG/s = \frac{(z+r・k)G}{s}
-  $$
+
+$$
+P' = z・G/s + r・kG/s = \frac{(z+r・k)G}{s}
+$$
+
 위 '서명 생성' 과정에서 $s=\frac{(z+rk)}{l}$ 식을 통해 s값을 구했으므로 s를 $\frac{(z+rk)}{l}$로 치환하면,
-  $$
-  R' = (z+rk)G ・ \frac{l}{z+rk} = l・G = R
-  $$
+
+$$
+R' = (z+rk)G ・ \frac{l}{z+rk} = l・G = R
+$$
+
 위 식이 성립하게 되고, 따라서 $R'$의 x좌표가 타원곡선 위의 한 점 $R$의 x좌표인 $r$과 같아야 올바른 서명임이 증명됩니다.
 
 <br>
@@ -288,7 +287,7 @@ $$
 <br>
 <a name="footnote_2">[2]</a> [비트코인 위키 - Secp256k1](https://en.bitcoin.it/wiki/Secp256k1)
 <br>
-<a name="footnote_3">[3]</a> [나무위키 - 체(대수학](https://namu.wiki/w/%EC%B2%B4(%EB%8C%80%EC%88%98%ED%95%99))
+<a name="footnote_3">[3]</a> [나무위키 - 체(대수학)](https://namu.wiki/w/%EC%B2%B4(%EB%8C%80%EC%88%98%ED%95%99))
 <br>
 <a name="footnote_4">[4]</a> [wikipedia - Elliptic curve point multiplication
 ](https://en.wikipedia.org/wiki/Elliptic_curve_point_multiplication)
