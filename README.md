@@ -26,7 +26,9 @@
 
 ## 기여하기
 
-오타, 정정이 필요한 정보의 수정 및 새로운 작업을 제출하기 전, [기여 가이드라인](./guidelines/contributing.md)을 먼저 확인해주세요. 지원이 필요하신 경우, 이메일 혹은 트위터를 통해 질문해 주세요.
+오타, 정정이 필요한 정보의 수정 및 새로운 작업을 제출하기 전, [기여 가이드라인](./guidelines/contributing.md)을 먼저 확인해주세요. 
+
+지원이 필요하신 경우, 이메일 혹은 트위터를 통해 질문해 주세요.
 
 - 이메일: hello@noncelab.com
 - 트위터: https://twitter.com/noncelab
