@@ -7,4 +7,4 @@
 - 4장. [키와 주소](./ch04.md)
 - 5장. [지갑](./ch05.md)
 - 6장. [트랜잭션](./ch06.md)
-- 7장. [Advanced Transactions and Scripting](./ch07.md)
+- 7장. [고급 트랜잭션과 스크립팅](./ch07.md)
