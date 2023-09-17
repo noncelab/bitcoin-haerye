@@ -6,8 +6,6 @@
 
 영문 자료 번역 뿐 아니라 기술 이해를 돕기 위한 정보가 더 필요한 부분에 해석을 덧붙이는 것을 목표로 합니다.
 
-
-
 <br>
 
 <p align="center">
@@ -17,16 +15,17 @@
 
 ## 자료
 
-- [마스터링 비트코인](./mastering%20bitcoin/index.md): 개미책 번역 및 해설서
+- [🐜 마스터링 비트코인](./mastering%20bitcoin/index.md): 개미책 번역 및 해설서
+- [⚡️ 마스터링 라이트닝 네트워크](./lnbook/index.md): 마스터링 라이트닝 네트워크 번역
+- [👟 비트코인 한걸음](./bitcoin%20onestep/index.md): 개발자를 위한 나노 단위 비트코인 이론과 실습
 - [배경 지식](./background/index.md): 비트코인을 이해하기 위해 알아야할 기초 지식
 - [BIP](./bip/index.md): 비트코인 개선안
-- [마스터링 라이트닝 네트워크](./lnbook/index.md): 마스터링 라이트닝 네트워크 번역
 
 <br>
 
 ## 기여하기
 
-오타, 정정이 필요한 정보의 수정 및 새로운 작업을 제출하기 전, [기여 가이드라인](./guidelines/contributing.md)을 먼저 확인해주세요. 
+오타, 정정이 필요한 정보의 수정 및 새로운 작업을 제출하기 전, [기여 가이드라인](./guidelines/contributing.md)을 먼저 확인해주세요.
 
 지원이 필요하신 경우, 이메일 혹은 트위터를 통해 질문해 주세요.
 
@@ -39,3 +38,4 @@
 
 - 마스터링 비트코인: [원문 LICENSE](https://github.com/bitcoinbook/bitcoinbook/blob/develop/LICENSE)
 - 마스터링 라이트닝 네트워크: [원문 LICENSE](https://github.com/lnbook/lnbook/blob/develop/LICENSE.md)
+- 프로그래밍 비트코인: [원분 LICENSE](https://github.com/jimmysong/programmingbitcoin#license)
