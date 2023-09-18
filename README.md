@@ -38,4 +38,4 @@
 
 - 마스터링 비트코인: [원문 LICENSE](https://github.com/bitcoinbook/bitcoinbook/blob/develop/LICENSE)
 - 마스터링 라이트닝 네트워크: [원문 LICENSE](https://github.com/lnbook/lnbook/blob/develop/LICENSE.md)
-- 프로그래밍 비트코인: [원분 LICENSE](https://github.com/jimmysong/programmingbitcoin#license)
+- 프로그래밍 비트코인: [원문 LICENSE](https://github.com/jimmysong/programmingbitcoin#license)
