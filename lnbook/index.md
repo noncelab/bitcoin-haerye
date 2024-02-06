@@ -10,7 +10,7 @@
 
 ### 1부 - 라이트닝 네트워크 이해하기
 
-*  [Introduction](https://github.com/lnbook/lnbook/blob/develop/01_introduction.asciidoc)
+*  [1장. 서론](./ch01.md)
 *  [Getting Started](https://github.com/lnbook/lnbook/blob/develop/02_getting_started.asciidoc)
 *  [How the Lightning Network Works](https://github.com/lnbook/lnbook/blob/develop/03_how_ln_works.asciidoc)
 *  [Lightning Node Software](https://github.com/lnbook/lnbook/blob/develop/04_node_client.asciidoc)
