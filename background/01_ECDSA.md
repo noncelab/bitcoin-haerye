@@ -63,7 +63,7 @@ $$
 <br>
 <br>
 
-<img src="[./01_ECDSA/various-elliptic-curve.png](https://github.com/bitcoinbook/bitcoinbook/blob/develop/images/mbc3_0403.png)" alt="유한체 위에서 정의된 타원곡선" style="width:60%">
+<img src="https://github.com/bitcoinbook/bitcoinbook/blob/develop/images/mbc3_0403.png" alt="유한체 위에서 정의된 타원곡선" style="width:60%">
 
 첫번째 이미지는 실수체(real number field) 위에서 정의된 secp256k1, 두번째 이미지는 유한체(finite field) $F_{17}$위에서 정의된 secp256k1입니다. 유한체가 무엇이길래 그래프가 선이 아니라 점의 집합으로 표현되는 것일까요?
 
