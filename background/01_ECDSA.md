@@ -40,7 +40,7 @@ $$
 
 <br>
 <figure>
-<img src="./01_ECDSA/various-elliptic-curve.png" alt="다양한 타원곡선 그래프" style="width:60%">
+<img src="./01_ECDSA/various-elliptic-curve.png" alt="다양한 타원곡선 그래프" style="width:40%">
 <figcaption align="center">출처: https://upload.wikimedia.org/wikipedia/commons/d/db/EllipticCurveCatalog.svg</figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ $$
 비트코인은 **유한체 위에서 정의된 secp256k1**을 사용합니다. 이해를 돕기 위해 여러분이 중학교 때 배운 실수체 위에서 정의된 타원곡선과 비교해보겠습니다. 
 <br>
 <figure>
-<img src="./01_ECDSA/secp256k1-graph-realnum.png" alt="실수체 위에서 정의된 타원곡선 그래프" style="width:60%">
+<img src="./01_ECDSA/secp256k1-graph-realnum.png" alt="실수체 위에서 정의된 타원곡선 그래프" style="width:40%">
 <figcaption align="center">출처: https://en.bitcoin.it/wiki/Secp256k1</figcaption>
 </figure>
 
