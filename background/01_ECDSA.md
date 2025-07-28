@@ -63,7 +63,7 @@ $$
 <br>
 <br>
 
-![유한체 위에서 정의된 타원곡선](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0403.png)
+![유한체 위에서 정의된 타원곡선](https://github.com/bitcoinbook/bitcoinbook/blob/develop/images/mbc3_0403.png)
 
 첫번째 이미지는 실수체(real number field) 위에서 정의된 secp256k1, 두번째 이미지는 유한체(finite field) $F_{17}$위에서 정의된 secp256k1입니다. 유한체가 무엇이길래 그래프가 선이 아니라 점의 집합으로 표현되는 것일까요?
 
@@ -144,7 +144,7 @@ $$
 <br>
 
 <figure>
-<img src="https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0404.png" alt="타원곡선 위에서 같은 점 덧셈 반복" style="width:60%">
+<img src="https://github.com/bitcoinbook/bitcoinbook/blob/develop/images/mbc3_0404.png" alt="타원곡선 위에서 같은 점 덧셈 반복" style="width:60%">
 </figure>
 
 위 그래프는 점 G를 계속해서 덧셈하는 과정을 표현한 것입니다. 처음에 G+G=2G가 계산되고 2G+2G=4G, 4G+4G=8G가 계산되는 과정이 그래프에 자세히 표현되어 있습니다. 만약 k=8이라면 $8・G$의 연산 과정이 위 그래프와 같을 것입니다. 여기서 타원곡선 위의 덧셈 연산 특징을 하나 알 수 있습니다. 만약에 8G의 결과 좌표인 (x,y)와 그 시작점인 G, 두 가지를 안다고 했을 때 여러분은 G로부터 몇 번 점 덧셈을 해야 (x,y)에 도달할 수 있는지 유추하실 수 있으신가요? 매우 힘들다는 것을 느끼실 수 있을 겁니다. 이렇게 xG = y에서 G와 y값을 안다고 해도 x값을 구할 수 있는 효율적인 알고리즘이 없는 문제를 이산 로그 문제라고 합니다. 이러한 특징은 타원곡선 암호가 비트코인의 비대칭키 생성 수단으로 선택된 이유 중 하나입니다.
